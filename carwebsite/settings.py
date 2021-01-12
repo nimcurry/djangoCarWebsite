@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'y$@)73$2*zp002s9s$g5_7*y9v!#vcp4&=t7yiy4wl218ul_p_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -62,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'carwebsite.urls'
@@ -88,7 +90,7 @@ WSGI_APPLICATION = 'carwebsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'carwebsite_db',
@@ -98,8 +100,8 @@ DATABASES = {
         'PASSWORD': 'gajanan150',
         }
 }
-
-
+ """
+DATABASES = {'default': dj_database_url.config(default='mysql://root:gajanan150@localhost/carwebsite_db')}
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -171,3 +173,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'nimcurry@gmail.com'
 EMAIL_HOST_PASSWORD = 'D@lhousie26'
 EMAIL_USE_TLS = True
+
+#whitenoise settings
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
