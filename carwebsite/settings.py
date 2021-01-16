@@ -92,16 +92,16 @@ WSGI_APPLICATION = 'carwebsite.wsgi.application'
 
 """ DATABASES = {
         'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'carwebsite_db',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'gajanan150',
+        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': 'jaiganesh',
         }
 }
  """
-DATABASES = {'default': dj_database_url.config(default='mysql://root:gajanan150@localhost/carwebsite_db')}
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:jaiganesh@localhost/carwebsite_db')}
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
