@@ -26,7 +26,7 @@ SECRET_KEY = 'y$@)73$2*zp002s9s$g5_7*y9v!#vcp4&=t7yiy4wl218ul_p_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ancient-gorge-42341.herokuapp.com','*']
+ALLOWED_HOSTS = ['ancient-gorge-42341.herokuapp.com']
 
 #redirect
 LOGIN_REDIRECT_URL = 'dashboard'
