@@ -280,6 +280,74 @@
     }
 },
 {
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$4xGaKZs8o55x$MZoL1dbY8bVR7vCR+Ux6+mPRaO8v9NqzTBgDPBh4dhM=",
+        "last_login": "2021-01-11T10:03:29.856Z",
+        "is_superuser": true,
+        "username": "nimcurry@yahoo.co.in",
+        "first_name": "nimish",
+        "last_name": "deshpande",
+        "email": "nimcurry@yahoo.co.in",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-12-31T10:59:40Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$quDLW5mfnXeg$UUoNO32NEUpP0IaoEm6pYXglen2j017RgWNgs0hEZYI=",
+        "last_login": "2021-01-11T23:19:43.653Z",
+        "is_superuser": false,
+        "username": "nimcurry",
+        "first_name": "nimish",
+        "last_name": "deshpande",
+        "email": "nimcurry@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-10T05:17:57.304Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!Ser8QLkwiaF7rKWAKD690slhcqGm2ms8StMPRXsW",
+        "last_login": "2021-01-11T02:36:26.037Z",
+        "is_superuser": false,
+        "username": "nimish",
+        "first_name": "Nimish",
+        "last_name": "Deshpande",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-10T22:56:22.825Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "!CUHX7CevzkyIqANct2hL452JI9usrnfDXCRl2TpF",
+        "last_login": "2021-01-11T02:36:37.420Z",
+        "is_superuser": false,
+        "username": "dna",
+        "first_name": "dna",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-01-11T02:28:52.491Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
     "model": "sites.site",
     "fields": {
         "domain": "example.com",
